@@ -37,8 +37,7 @@ namespace StudentSystemAPI.Migrations
                         .HasMaxLength(50);
 
                     b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(20);
+                        .IsRequired();
 
                     b.Property<string>("SurName")
                         .IsRequired()

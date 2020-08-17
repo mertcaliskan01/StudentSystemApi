@@ -15,7 +15,7 @@ namespace StudentSystemAPI.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(maxLength: 50, nullable: false),
                     SurName = table.Column<string>(maxLength: 50, nullable: false),
-                    Phone = table.Column<string>(maxLength: 20, nullable: false),
+                    Phone = table.Column<string>(nullable: false),
                     Address = table.Column<string>(maxLength: 100, nullable: false),
                     Class = table.Column<string>(maxLength: 20, nullable: false)
                 },

@@ -9,7 +9,7 @@ using StudentSystemAPI.Data;
 namespace StudentSystemAPI.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20200815162147_first")]
+    [Migration("20200817155536_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,8 +39,7 @@ namespace StudentSystemAPI.Migrations
                         .HasMaxLength(50);
 
                     b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasMaxLength(20);
+                        .IsRequired();
 
                     b.Property<string>("SurName")
                         .IsRequired()
