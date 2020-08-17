@@ -1,5 +1,7 @@
 # StudentSystemApi
 
-This API is created for the connection between web project and DB. 
+The StudentSystemApi is created for the connection between web project and DB. 
 
-This project has been deployed by Heroku. Link : https://studentsystemapi.herokuapp.com/api/student/
+The project use Microsoft Sql Server.
+
+You can access the project online from [Web Project Source](https://studentsystemapi.herokuapp.com/api/student/).
