@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using StudentSystemAPI.Data;
 
 namespace StudentSystemAPI.Model
 {
-    public class Student
+    public class Student : IEntity
     {
         public int Id { get; set; }
 
@@ -20,7 +21,7 @@ namespace StudentSystemAPI.Model
         public string SurName { get; set; }
 
         [Required(ErrorMessage = "You must provide a phone number")]
-        [Display(Name = "Home Phone")]
+        [Display(Name = "Phone")]
         [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}", ErrorMessage = "Not a valid phone number")]
         public string Phone { get; set; }

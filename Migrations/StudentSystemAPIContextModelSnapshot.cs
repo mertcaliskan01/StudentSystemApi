@@ -2,17 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using StudentSystemAPI.Data;
 
 namespace StudentSystemAPI.Migrations
 {
-    [DbContext(typeof(Context))]
-    [Migration("20200817155536_first")]
-    partial class first
+    [DbContext(typeof(StudentSystemAPIContext))]
+    partial class StudentSystemAPIContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,7 +45,7 @@ namespace StudentSystemAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("students");
+                    b.ToTable("Student");
                 });
 #pragma warning restore 612, 618
         }
